@@ -7,7 +7,7 @@
    
 // select planets parent div and store it in variables
     const coruscantDiv = document.getElementById('coruscant');
-    const degobahDiv = document.getElementById('debobah');
+    const degobahDiv = document.getElementById('degobah');
     const dqarDiv = document.getElementById('dqar');    
     const nabooDiv = document.getElementById('naboo');
     const tatooineDiv = document.getElementById('tatooine');
@@ -23,7 +23,7 @@
         // use annonymous function to change coruscant image to display none
         coruscant.style.display = 'none';
         // setAttribute as "name-value" pair to the explosion image element to give this image a path
-        explosionCoruscant.setAttribute( 'src', './assets/explosion.jpg');
+        explosionCoruscant.setAttribute( 'src', './assets/explosion-coruscant.jpg');
 
     // insert the explosion image now with the path to a jpg image in assets folder to the parent element in HTML       
     coruscantDiv.appendChild(explosionCoruscant);
@@ -34,6 +34,24 @@ degobah.addEventListener('click', function () {
     degobah.style.display = 'none';
     explosionDegobah.setAttribute('src', './assets/explosion-degobah.jpg');
     degobahDiv.appendChild(explosionDegobah);
+})
+
+dqar.addEventListener('click', function () {
+    dqar.style.display = 'none';
+    explosionDqar.setAttribute('src', './assets/explosion-dqar.jpg');
+    dqarDiv.appendChild(explosionDqar);
+})
+
+naboo.addEventListener('click', function () {
+    naboo.style.display = 'none';
+    explosionNaboo.setAttribute('src', './assets/explosion-naboo.jpg');
+    nabooDiv.appendChild(explosionNaboo);
+})
+
+tatooine.addEventListener('click', function () {
+    tatooine.style.display = 'none';
+    explosionTatooine.setAttribute('src', './assets/explosion-tatooine.jpg');
+    tatooineDiv.appendChild(explosionTatooine);
 })
 
 // DRY code attempt

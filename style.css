@@ -29,6 +29,7 @@ h1 {
 main {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 div img {
     height: 225px;
