@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Death Star Targets</title>
     <link rel="stylesheet" href="./style.css">
-    <script src="https://kit.fontawesome.com/03eac2cb0f.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -16,29 +15,12 @@
         <h1>Prepare to Die!!!</h1>
     </header>
     <main>
-        <div id="test" class="coruscant"><img src="./assets/coruscant.jpg" alt="coruscant"></div>
-        <div class="degobah"><img src="./assets/degobah.jpg" alt="degobah"></div>
-        <div class="dqar"><img src="./assets/dqar.jpg" alt="d'qar"></div>
-        <div class="naboo"><img src="./assets/naboo.jpg" alt="naboo"></div>
-        <div class="tatooine"><img src="./assets/tatooine.jpg" alt="tatooine"></div>
+        <div id="coruscant" class="planet"><img src="./assets/coruscant.jpg" alt="coruscant"></div>
+        <div id="degobah" class="planet"><img src="./assets/degobah.jpg" alt="degobah"></div>
+        <div id="dqar" class="planet"><img src="./assets/dqar.jpg" alt="d'qar"></div>
+        <div id="naboo" class="planet"><img src="./assets/naboo.jpg" alt="naboo"></div>
+        <div id="tatooine" class="planet"><img src="./assets/tatooine.jpg" alt="tatooine"></div>
     </main>
-    <script>
-        // select image as the target and store them in variables
-            const coruscant = document.querySelector('.coruscant img');
-            const degobah = document.querySelector('.degobah img');
-            const dqar = document.querySelector('.dqar img');
-            const naboo = document.querySelector('.naboo img');
-            const tatooine = document.querySelector('.tatooine img');
-            const testDiv = document.getElementById('test');
-            const explosion = document.createElement('img');
-
-            coruscant.addEventListener('click', function () {
-                coruscant.style.display = 'none';
-                explosion.setAttribute( 'src', './assets/explosion.jpg');
-                // explosion.innerHTML = `<img src="./assets/explosion.jpg">`;
-                
-                testDiv.appendChild(explosion);
-            })
-    </script>
+    <script src='./script.js'></script>
 </body>
 </html>

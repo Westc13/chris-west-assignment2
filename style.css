@@ -26,37 +26,15 @@ h1 {
     text-align: center;
     color: rgb(38, 218, 38)
 }
-
-div {
+main {
+    display: flex;
+    justify-content: space-evenly;
+}
+div img {
+    height: 225px;
     position: relative;
     opacity: 0.75;
     display: inline-block;
-}
-
-
-.coruscant {
-    top: -120px;
-    left: 20px;
-}
-
-.degobah {
-    top: -150px;
-    right: -750px;
-}
-
-.dqar {
-    bottom: -200px;
-    right: -500px;
-}
-
-.naboo {
-    top: 130px;
-    left: 40px;
-}
-
-.tatooine {
-    left: -800px;
-    top: 150px;
 }
 
 img:hover {
